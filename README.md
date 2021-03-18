@@ -28,6 +28,7 @@ The API exposes the following end points
 
 ```
 cd product-server
+npm install
 npm start
 ```
 
@@ -43,6 +44,7 @@ The appointment can only be booked within the time range the seller is available
 
 ```
 cd react-buyer-app
+npm install
 npm start
 npm run ios # or npm run android
 ```
@@ -76,6 +78,7 @@ This is a react web application which is used by sellers to view the appointment
 
 ```
 cd seller-web-app
+npm install
 npm start
 ```
 
