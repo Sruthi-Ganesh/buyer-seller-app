@@ -7,6 +7,17 @@ action smoothly.
 ## Product Server - product-server
 This is the nodejs express server application. This connects with mongodb database. 
 
+1. The server uses token based authentication to authenticate users. 
+2. Token is retrieved when the user logs in to the app
+3. Token needs to be added to header `x-access-token` for every API call except signin and signup (obviously ;)
+4. Token is session based, not stored on the browser due to security concerns, if you refresh the page you need to login again (sorry!)
+5. Each user can have roles (buyer, seller or admin). 
+6. Only users having buyer role can login using mobile app. 
+7. Only users have seller role can login using web app. 
+8. If no role is present, the user cannot login. Based on the signup on either mobile or web app, the role is assigned automatically.
+9. Single user can have mutiple roles. Multiple role configuration is supported from API standpoint, can be utilised from Postman.
+10. There is no forgot password option as of now, so try to remember the username and password.
+
 ### Prerequisites
 #### Installing mongo-db
 If you do not have mongodb service running locally, follow this here.
