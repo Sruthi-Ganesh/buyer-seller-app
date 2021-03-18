@@ -1,4 +1,4 @@
-const API_URL = 'http://192.168.0.7:8080/api/'
+const API_URL = 'http://<your-server-ip-address>:<your-server-port>/api/'
 export const LOGIN_API = API_URL + 'auth/signin'
 export const SIGNUP_API = API_URL + 'auth/signup'
 export const SELLERS_API = API_URL + 'seller/all'
