@@ -1,0 +1,5 @@
+const API_URL = 'http://<your-server-ip-address>:<your-server-port>/api/'
+export const LOGIN_API = API_URL + 'auth/signin'
+export const SIGNUP_API = API_URL + 'auth/signup'
+export const SELLERS_API = API_URL + 'seller/all'
+export const SELLER_SCHEDULE_APPOINTMENT_API = API_URL + 'appointment/schedule'
